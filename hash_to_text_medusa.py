@@ -1,6 +1,7 @@
 import os
 import re
 import pandas as pd
+
 df = pd.read_csv("hash_map.csv")
 print(df)
 
@@ -42,7 +43,7 @@ for idx, row in df.iterrows():
 
 
 df["dim_red_method"] = dim_red_method_list
-df["norm_method"] = norm_method_list
-df["plot_status"] = plot_status_list
+df["norm_method"]    = norm_method_list
+df["plot_status"]    = plot_status_list
 
 print(df)
